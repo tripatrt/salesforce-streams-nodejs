@@ -82,6 +82,8 @@ class IndexPage extends React.Component {
                     <span title={content.LastModifiedDate}>
                       {this.timeAgo.format(Date.parse(content.LastModifiedDate)) || '(Dateless)'}
                     </span>
+                    <br/>
+                    {JSON.stringify(content)}
                 </p>
               </li>;
             })}
